@@ -1,0 +1,108 @@
+body{
+  background-color: rgb(210, 210, 210);
+  font-family: 'Exo 2', sans-serif;
+  color: rgb(64, 64, 64);
+}
+h1{
+  margin-left: 35%;
+}
+.name{
+  margin-top:  -19px;
+  margin-left: -9px;
+  background-color: rgb(230, 230, 230);
+  box-shadow: 15px 13px 2px 0px rgba(152, 152, 152, 1);
+  height: 60px;
+  width: 99.9%;
+  justify-content: center;
+  padding: 10px;
+  font-size: 25px;
+  letter-spacing:1px;
+  text-align: center;
+}
+
+.sensors{
+  width: 25%;
+  height: 300px;
+  margin-left: 35%;
+  margin-top: 2%;
+  border: 2px solid rgb(70, 70, 70, 0.7);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  font-size: 20px;
+}
+.line{
+  border-bottom: 2px solid rgba(0,0,0,0.10);
+  width: 30%;
+  margin-left: 34%;
+  margin-top: 3%;
+}
+
+.light_control{
+  margin-left: 36%;
+
+}
+
+
+.switch {
+  position: relative;
+  display: flex;
+  width: 60px;
+  height: 34px;
+  margin-top: -3%;
+  margin-left: 35%;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #8a8a8a;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
